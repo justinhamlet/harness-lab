@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: harness-lab-pod
+spec:
+  containers:
+  - name: nginx
+    image: justinhamlet/harness-lab-app:latest
+    ports:
+    - containerPort: 80
